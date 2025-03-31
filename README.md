@@ -2,6 +2,9 @@
 
 **To Do List Self(1)**
 
+<br>
+### **[✏️프로젝트 바로가기✏️](https://jihyoung-to-do-list-self-first.netlify.app/)**
+
 ## **느낀점**
 혼자서 할 수 있는 거라곤 html과 css, 변수 선언정도
 근데 그 마저도 지피티쌤과 함께 해야한다는 거
