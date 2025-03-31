@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'DepartureMono-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2409-1@1.0/DepartureMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title{
+    font-family: 'DepartureMono-Regular';
+    font-size: 35px;
+    letter-spacing: -4px;
+    padding-top: 10px;
+}
+
+.input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.task-input{
+    outline: none;
+    border:none;
+    font-family: 'DOSGothic';
+    text-align: center;
+    width: 65vw;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(188, 224, 255),
+                -3px -3px 5px rgb(255, 255, 255);
+}
+
+.task-input::placeholder {
+    letter-spacing: -1.5px;
+    font-family: 'DepartureMono-Regular';
+    color: rgb(182, 203, 214);
+}
+
+.add-button{
+    font-family: 'DepartureMono-Regular';
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 4px rgb(159, 210, 255);
+    outline: none;
+    border:none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 5px rgb(188, 224, 255)
+    ,-3px -3px 5px rgb(255, 255, 255);
+}
+
+.add-button:active{
+    transform: scale(0.96);
+}
+
+.tab-area{
+    font-family: 'DOSGothic';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.task-tab{
+    display: flex;
+    font-family: 'DepartureMono-Regular';
+    font-size: larger;
+    position: relative;
+    justify-content: center;
+
+}
+
+.task-tab div{
+    cursor: pointer;
+    position: relative;
+    color: rgb(30, 184, 255);
+    cursor: pointer;
+    gap: 1em;
+    padding: 2em;
+}
+
+#under-line{
+    background-color: aliceblue;
+    height: 4px;
+    position: absolute;
+    top: 76px;
+    left: 28px;
+    width: 57px;
+    transition: 0.5s;
+    padding: 0px;
+    box-shadow: 3px 3px 5px rgb(188, 224, 255)
+    ,-3px -3px 5px rgb(255, 255, 255);
+}
+
+.list-background{
+    background-image: url('images/background_paper.jpg');
+    background-size: cover;
+    filter: brightness(105%);
+    border-radius: 30px;
+    height: 70vh;
+    width: 80vw;
+    box-shadow: 0 0 5px rgb(188, 224, 255);
+}
+
+.task-list{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.task{
+    display: flex;
+    border-radius: 15px;
+    padding-inline: 15px;
+    padding-block: 5px;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.task-working{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.task-done{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.todo-list{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 5px;
+}
+
+.check-button{
+    
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 2px 2px 0 rgb(0, 0, 0);
+    padding-inline: 10px;
+}
+
+.check-button:active{
+    transform: scale(0.96);
+    color:rgb(32, 202, 94);
+}
+
+.delete-button{
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 2px 2px 0 rgb(0, 0, 0);
+    padding-inline: 10px;
+}
+
+.delete-button:active{
+    transform: scale(0.96);
+    color: red;
+}
+
+.task-working{
+    text-align: center;
+}
+
+.task-done{
+    text-decoration: line-through;
+    color: aliceblue;
+    background-color: rgba(69, 125, 151, 0.434);
+    text-align: center;
+}
